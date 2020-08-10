@@ -1,0 +1,33 @@
+<div class="listing">
+    <div class="container">
+        <div class="form-group col-4 mt-4">
+            <select id="generes" class="form-control" (change)="getMovieByCategory($event.target.value)">
+                <option value=""> Select Generes </option>
+                <option *ngFor="let item of generes" value="{{ item.id }}">{{ item.name }}</option>
+            </select>
+        </div>
+        <div class="sliderBox">
+
+            <div class="row mb-5">
+                <div *ngFor="let info of detailsInfo" class="col-lg-2 col-md-3 col-sm-3 col-6">
+                    <div class="movieBox">
+                        <img src="{{img_url}}{{info.backdrop_path}}" class="img-fluid boxImg">
+                        <a href="javascript:void(0)" (click)="getDetail(info.id)"><strong>{{info.title}}</strong></a>
+                    </div>
+                </div>
+            </div>
+
+            <label> Category </label>
+            <div class="row mb-5">
+                <div *ngFor="let detail of details" class="col-lg-2 col-md-3 col-sm-3 col-6">
+                    <div class="movieBox">
+                        <img src="{{img_url}}{{detail.backdrop_path}}" class="img-fluid boxImg">
+                        <a href="javascript:void(0)" (click)="getDetail(detail.id)"><strong>{{detail.title}}</strong></a>
+                    </div>
+                </div>
+            </div>
+            <!-- category 1 -->
+        </div>
+    </div>
+</div>
+

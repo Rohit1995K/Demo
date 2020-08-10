@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background: #f1f1f1;
+}
+
+/* .jumbotron{
+    background-image: url(assets/);
+} */
+
+#demo{
+    background: #555;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.sliderBox{
+    padding: 20px 10px 10px;
+}
+
+/* .listing{ 
+    background: #fff;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+} */
+
+.movieBox{
+    /* text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 3px #ccc; */
+    margin-bottom: 20px;
+}
+
+.boxImg{
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 3px #888;
+}
